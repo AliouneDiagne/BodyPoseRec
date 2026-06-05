@@ -1,0 +1,12 @@
+BodyPoseRec - Log addestramento MLP
+==================================================
+
+Architettura: Input(26) -> Dense(64,ReLU)+Dropout(0.3) -> Dense(32,ReLU)+Dropout(0.3) -> Dense(7,Softmax)
+Optimizer: Adam (lr=0.001)
+Loss: Categorical Cross-Entropy
+Epoche eseguite: 72
+
+Accuracy validation: 1.0000
+Macro Precision val: 1.0000
+Macro Recall val   : 1.0000
+Macro F1 val       : 1.0000

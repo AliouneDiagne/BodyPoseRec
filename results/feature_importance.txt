@@ -1,0 +1,61 @@
+BodyPoseRec - Permutation Feature Importance
+============================================================
+
+L'importanza e' il calo di accuratezza (media su 10 permutazioni) quando la feature viene mescolata casualmente.
+
+--- SVM (accuratezza baseline = 1.0000) ---
+   1. nose_visibility          importanza = +0.2825
+   2. core_visibility_mean     importanza = +0.0000
+   3. body_depth_range         importanza = +0.0000
+   4. wrist_depth_mean         importanza = +0.0000
+   5. hip_depth_spread         importanza = +0.0000
+   6. shoulder_depth_spread    importanza = +0.0000
+   7. stance_width_ratio       importanza = +0.0000
+   8. arm_span_ratio           importanza = +0.0000
+   9. shoulder_hip_ratio       importanza = +0.0000
+  10. wrist_height_min         importanza = +0.0000
+  11. wrist_height_max         importanza = +0.0000
+  12. hand_to_hip_min          importanza = +0.0000
+  13. hand_to_hip_max          importanza = +0.0000
+  14. ankle_distance           importanza = +0.0000
+  15. elbow_distance           importanza = +0.0000
+  16. wrist_distance           importanza = +0.0000
+  17. shoulder_line_tilt       importanza = +0.0000
+  18. trunk_inclination        importanza = +0.0000
+  19. hip_angle_min            importanza = +0.0000
+  20. hip_angle_max            importanza = +0.0000
+  21. knee_angle_min           importanza = +0.0000
+  22. knee_angle_max           importanza = +0.0000
+  23. shoulder_abduction_min   importanza = +0.0000
+  24. shoulder_abduction_max   importanza = +0.0000
+  25. elbow_angle_min          importanza = +0.0000
+  26. elbow_angle_max          importanza = +0.0000
+
+--- MLP (accuratezza baseline = 1.0000) ---
+   1. nose_visibility          importanza = +0.2825
+   2. wrist_depth_mean         importanza = +0.0083
+   3. body_depth_range         importanza = +0.0002
+   4. wrist_distance           importanza = +0.0002
+   5. hip_depth_spread         importanza = +0.0000
+   6. core_visibility_mean     importanza = +0.0000
+   7. stance_width_ratio       importanza = +0.0000
+   8. arm_span_ratio           importanza = +0.0000
+   9. shoulder_hip_ratio       importanza = +0.0000
+  10. shoulder_depth_spread    importanza = +0.0000
+  11. wrist_height_min         importanza = +0.0000
+  12. wrist_height_max         importanza = +0.0000
+  13. hand_to_hip_max          importanza = +0.0000
+  14. hand_to_hip_min          importanza = +0.0000
+  15. ankle_distance           importanza = +0.0000
+  16. elbow_distance           importanza = +0.0000
+  17. shoulder_line_tilt       importanza = +0.0000
+  18. trunk_inclination        importanza = +0.0000
+  19. hip_angle_min            importanza = +0.0000
+  20. hip_angle_max            importanza = +0.0000
+  21. knee_angle_min           importanza = +0.0000
+  22. knee_angle_max           importanza = +0.0000
+  23. shoulder_abduction_min   importanza = +0.0000
+  24. shoulder_abduction_max   importanza = +0.0000
+  25. elbow_angle_min          importanza = +0.0000
+  26. elbow_angle_max          importanza = +0.0000
+

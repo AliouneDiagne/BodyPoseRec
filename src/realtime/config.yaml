@@ -1,0 +1,39 @@
+# =============================================================================
+# config.yaml - Parametri della pipeline real-time di BodyPoseRec
+# =============================================================================
+# Questo file raccoglie i parametri "operativi" della demo live, separati
+# dal codice. Modificandolo si puo' regolare il comportamento del
+# riconoscitore senza toccare i sorgenti Python.
+#
+# I valori predefiniti coincidono con quelli di src/config.py; questo file
+# serve a chi vuole sperimentare rapidamente (es. una finestra temporale
+# piu' lunga per maggiore stabilita', o una soglia di confidenza diversa).
+# =============================================================================
+
+# --- Modello di classificazione da usare nella demo ---
+# "mlp" = rete neurale Keras (deep learning); "svm" = modello classico.
+model_type: mlp
+
+# --- Webcam ---
+# Indice del dispositivo di acquisizione (0 = webcam predefinita).
+camera_index: 0
+
+# --- Stabilizzazione temporale ---
+# Ampiezza della finestra FIFO per la media mobile sulle probabilita'.
+# Valori piu' alti = predizione piu' stabile ma piu' "lenta" a reagire.
+temporal_window: 7
+
+# Soglia di confidenza: sotto questo valore la posa e' marcata "Incerta".
+confidence_threshold: 0.55
+
+# --- MediaPipe Pose ---
+# model_complexity: 0 = lite (veloce), 1 = full (bilanciato), 2 = heavy (preciso).
+mediapipe_model_complexity: 1
+mediapipe_min_detection_confidence: 0.5
+mediapipe_min_tracking_confidence: 0.5
+
+# --- Visualizzazione ---
+# Se true, disegna lo scheletro MediaPipe sopra il frame della webcam.
+draw_skeleton: true
+# Se true, mostra il punteggio di qualita' della posa (0-100).
+show_quality_score: true

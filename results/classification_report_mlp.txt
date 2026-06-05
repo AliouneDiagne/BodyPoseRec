@@ -1,0 +1,23 @@
+BodyPoseRec - Classification Report MLP (test set)
+============================================================
+
+Accuracy globale : 1.0000
+Macro Precision  : 1.0000
+Macro Recall     : 1.0000
+Macro F1-score   : 1.0000
+
+Classification report per-classe (One-vs-Rest):
+
+                       precision    recall  f1-score   support
+
+  Front Double Biceps     1.0000    1.0000    1.0000        90
+     Front Lat Spread     1.0000    1.0000    1.0000        90
+           Side Chest     1.0000    1.0000    1.0000        90
+         Side Triceps     1.0000    1.0000    1.0000        90
+   Back Double Biceps     1.0000    1.0000    1.0000        90
+      Back Lat Spread     1.0000    1.0000    1.0000        90
+Abdominals and Thighs     1.0000    1.0000    1.0000        90
+
+             accuracy                         1.0000       630
+            macro avg     1.0000    1.0000    1.0000       630
+         weighted avg     1.0000    1.0000    1.0000       630

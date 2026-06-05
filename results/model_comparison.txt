@@ -1,0 +1,12 @@
+BodyPoseRec - Confronto modelli sul test set
+============================================================
+
+Metrica                         SVM          MLP
+------------------------------------------------
+Accuracy                     1.0000       1.0000
+Macro Precision              1.0000       1.0000
+Macro Recall                 1.0000       1.0000
+Macro F1-score               1.0000       1.0000
+Macro AUC                    1.0000       1.0000
+
+I due modelli hanno lo stesso Macro F1.

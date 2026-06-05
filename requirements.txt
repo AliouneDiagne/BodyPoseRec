@@ -1,0 +1,38 @@
+# =============================================================================
+# requirements.txt — BodyPoseRec
+# Versioni esatte testate su Windows 11, Python 3.11
+#
+# Installazione:
+#   pip install -r requirements.txt
+#
+# NOTA MEDIAPIPE:
+#   mediapipe richiede protobuf < 5, tensorflow 2.21+ richiede protobuf >= 6.
+#   I due pacchetti NON possono coesistere nello stesso venv.
+#   L'inferenza MLP usa ONNX Runtime (nessuna dipendenza da protobuf versionate).
+#   Per run_demo.py (webcam live) creare un venv separato con mediapipe==0.10.14.
+#   run_simulation.py dimostra la stessa logica senza webcam.
+# =============================================================================
+
+# --- Pipeline core (training, evaluation, simulation) ---
+numpy==2.4.6
+scikit-learn==1.8.0
+tensorflow==2.21.0          # training MLP; non serve a runtime (ONNX)
+keras==3.14.1
+scipy==1.17.1
+matplotlib==3.10.9
+seaborn==0.13.2
+reportlab==4.5.1
+PyYAML==6.0.3
+protobuf==7.35.0            # richiesto da tensorflow 2.21
+
+# --- Inferenza ONNX (nessun conflitto con protobuf) ---
+onnxruntime==1.26.0
+onnx==1.21.0
+tf2onnx==1.17.0             # conversione keras -> onnx post-training
+
+# --- Demo live da webcam (venv separato consigliato) ---
+# mediapipe==0.10.14        # incompatibile con protobuf 7 (richiede < 5)
+opencv-python==4.13.0.92
+
+# --- Dashboard Streamlit ---
+streamlit==1.57.0

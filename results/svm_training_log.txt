@@ -1,0 +1,10 @@
+BodyPoseRec - Log addestramento SVM
+==================================================
+
+Migliori iperparametri: {'C': 0.1, 'gamma': 0.001, 'kernel': 'rbf'}
+Accuracy CV media: 1.0000
+
+Accuracy validation: 1.0000
+Macro Precision val: 1.0000
+Macro Recall val   : 1.0000
+Macro F1 val       : 1.0000
